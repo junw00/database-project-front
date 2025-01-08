@@ -1,0 +1,54 @@
+.program-list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.program-list-team-info {
+    font-size: 14px;
+}
+.program-list-team-info span {
+    font-weight: bold;
+}
+.program-list-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.program-list-menu {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+.program-list-menu a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+/* .program-list-menu a::after {
+    content: "2";
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 5px;
+} */
+.program-list-button {
+    background-color: #f06262;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.dunning {
+    background-color: #ff0000;
+    color: white;
+}

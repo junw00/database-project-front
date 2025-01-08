@@ -1,0 +1,81 @@
+.open-program-container {
+    --main-red: #c41e3a;
+    --light-red: #e63e5c;
+    --dark-red: #a11830;
+    --text-dark: #333333;
+    --text-light: #ffffff;
+  
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .open-program-btn {
+    background-color: var(--main-red);
+    color: var(--text-light);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .open-program-btn:hover {
+    background-color: var(--dark-red);
+  }
+  
+  .open-program-container h1 {
+    color: var(--main-red);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .open-program-container > p {
+    text-align: center;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+  }
+  
+  .open-program-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .open-program-item {
+    background-color: var(--text-light);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(196, 30, 58, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .open-program-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(196, 30, 58, 0.2);
+  }
+  
+  .open-program-item h3 {
+    color: var(--main-red);
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 24px; /* h3 크기 증가 */
+    font-weight: bold;
+}
+  
+  .open-program-item p {
+    margin: 5px 0;
+    color: var(--text-dark);
+    text-align: left;
+    font-size: 14px; /* p 태그 텍스트 크기 감소 */
+    line-height: 2; /* 줄 간격 조정 */
+  }
+
+  /* .open-program-item p:first-of-type {
+    font-weight: bold;
+    color: var(--light-red);
+    margin-bottom: 10px;
+  } */

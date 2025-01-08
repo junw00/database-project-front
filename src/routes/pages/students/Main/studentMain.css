@@ -1,0 +1,273 @@
+/* 공통 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 메인 컨테이너 스타일 수정 */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 50px auto 0; /* 상단 여백 추가 */
+    padding: 0 15px;
+    transition: max-width 0.3s ease-in-out;
+}
+
+
+/* 헤더 스타일 수정 */
+.program-list-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px; /* 헤더의 높이 설정 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d32f2f;
+    color: white;
+    padding: 0 15px;
+}
+
+
+
+.program-list-logo {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.program-list-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.program-list-tab {
+    position: relative;
+}
+
+.program-list-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 0.7em;
+    font-weight: 800;
+    border-radius: 50%;
+    padding: 2px 5px;
+}
+
+/* 메인 섹션 스타일 */
+.program-list-section {
+    max-width: 100%;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+.program-list-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.program-list-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    flex: 1 1 calc(33.333% - 15px);
+    min-width: 200px;
+}
+
+/* 테이블 스타일 */
+.program-list-table {
+    list-style-type: none;
+    padding: 0;
+}
+
+.program-list-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+.program-list-button {
+    background-color: #d32f2f;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* 푸터 스타일 */
+.program-list-footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333333;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(33.333% - 10px);
+    min-width: 200px;
+    height: 80px;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    background-color: gray;
+}
+
+.box-link {
+    width: calc(33.333% - 10px);
+    min-width: 200px;
+    text-decoration: none;
+}
+
+.box-link .box {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 250px;
+    max-height: 80vh;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.sidebar.closed {
+    transform: translateX(100%) translateY(-50%);
+}
+
+.toggle-btn {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.content {
+    padding: 15px;
+    overflow-y: auto;
+    height: 100%;
+    font-size: 0.9em;
+    /* width: auto; */
+    
+}
+
+.status-section {
+    margin-bottom: 15px;
+    height: 100%;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .box {
+        width: calc(50% - 10px);
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 50vh;
+        top: auto;
+        bottom: 0;
+        transform: translateY(0);
+    }
+
+    .sidebar.closed {
+        transform: translateY(100%);
+    }
+
+    .toggle-btn {
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%) rotate(0);
+    }
+}
+/* ProfessorMain.css */
+.program-list-card {
+    padding: 16px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transition for transform and border color */
+}
+
+.program-list-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+.unread-border {
+    border-color: red; /* Red border for unread state */
+}
+
+.default-border {
+    border-color: transparent; /* Default transparent border */
+}
+
+.completed-border {
+    border-color: green; /* Green border for completed state */
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.ljw {
+    color: red;
+    font-weight: 800;
+    animation: blink 1s infinite; /* 1초 주기로 반복 */
+}

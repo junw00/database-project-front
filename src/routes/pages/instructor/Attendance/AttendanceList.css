@@ -1,0 +1,89 @@
+/* 전체 컨테이너 스타일 */
+.attendance-list-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* 프로그램 이름 (h1 태그) 스타일 */
+.attendance-list-container h1 {
+    color: #c41e3a;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* 전체 학생 수 정보 (p 태그) 스타일 */
+.attendance-list-container p {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* 출결 생성하기 버튼 스타일 */
+.create-attendance-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #c41e3a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.create-attendance-btn:hover {
+    background-color: #a51930;
+}
+
+/* 출석 리스트 테이블 스타일 */
+.attendance-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* 테이블 헤더와 셀 공통 스타일 */
+.attendance-list-table th,
+.attendance-list-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* 테이블 헤더 스타일 */
+.attendance-list-table th {
+    background-color: #c41e3a;
+    color: white;
+    font-weight: bold;
+}
+
+/* 테이블 짝수 행 스타일 */
+.attendance-list-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* 테이블 행 호버 효과 */
+.attendance-list-table tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* 상세 보기 버튼 스타일 */
+.attendance-list-table button {
+    padding: 8px 12px;
+    background-color: #c41e3a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.attendance-list-table button:hover {
+    background-color: #a51930;
+}

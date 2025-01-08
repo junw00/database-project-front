@@ -1,0 +1,62 @@
+.assignment-detail-container {
+    padding: 20px;
+  }
+  
+  .assignment-detail-heading {
+    margin-bottom: 20px;
+  }
+  
+  .assignment-detail-question-block {
+    margin-bottom: 20px;
+  }
+  
+  .assignment-detail-question-title {
+    margin-bottom: 10px;
+  }
+  
+  .assignment-detail-examples {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .assignment-detail-example-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .assignment-detail-example-item:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .assignment-detail-example-item.assignment-detail-selected {
+    background-color: #c41e3a;
+    color: white;
+  }
+  
+  .assignment-detail-example-num {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .assignment-detail-example-content {
+    /* Add any specific styles for the content if needed */
+  }
+  
+  .assignment-detail-submit-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #c41e3a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white
+  }
+  
+  .assignment-detail-submit-button:hover {
+    background-color: #a8001c;
+  }
+  

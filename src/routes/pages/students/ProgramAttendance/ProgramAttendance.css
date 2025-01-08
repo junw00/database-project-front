@@ -1,0 +1,59 @@
+.ProgramAttendancePresenter-container {
+    padding: 20px;
+    width: 100%;
+}
+
+.attendance-status {
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.status-header {
+    margin-bottom: 20px;
+}
+
+.status-header h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.status-info {
+    display: flex;
+    gap: 20px;
+    color: #666;
+    font-size: 20px;
+}
+
+.attendance-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.status-present {
+    color: #007bff;
+    background-color: #e7f5ff;
+}
+
+.status-absent {
+    color: #dc3545;
+    background-color: #fff5f5;
+}
+

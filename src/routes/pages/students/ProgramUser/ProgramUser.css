@@ -1,0 +1,73 @@
+.ProgramUserPresenter-container {
+    padding: 20px;
+    width: 100%;
+}
+
+.user-filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-select {
+    padding: 8px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    min-width: 120px;
+}
+
+.search-input {
+    padding: 8px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.user-list {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.user-header {
+    display: grid;
+    grid-template-columns: 50px 1fr 2fr 1fr;
+    padding: 12px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: bold;
+}
+
+.user-item {
+    display: grid;
+    grid-template-columns: 50px 1fr 2fr 1fr;
+    padding: 12px;
+    border-bottom: 1px solid #dee2e6;
+    align-items: center;
+}
+
+.user-item.gray {
+    background-color: #f8f9fa;
+}
+
+.user-item:hover {
+    background-color: #f1f3f5;
+}
+
+.checkbox-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-column {
+    font-weight: 500;
+}
+
+.program-column {
+    color: #666;
+}
+
+.role-column {
+    color: #666;
+}

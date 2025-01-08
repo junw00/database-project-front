@@ -1,0 +1,31 @@
+.programHomeHeader-container {
+    width: 100%;
+}
+
+.programHomeHeader-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #c41e3a;
+}
+
+.programHomeHeader-logo-name {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.programHomeHeader-logo-image {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.programHomeHeader-title {
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #dee2e6;
+    background-color: white;
+}

@@ -1,0 +1,61 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #c41e3a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.recommend-btn {
+  margin-top: 20px;
+  background-color: #b80000;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.popup-content th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}

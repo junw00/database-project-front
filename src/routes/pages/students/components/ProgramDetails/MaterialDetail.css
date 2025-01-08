@@ -1,0 +1,90 @@
+.material-detail {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+  }
+  
+  .material-detail__title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    /* text-align: center; */
+  }
+  
+  .material-detail__pdf-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .material-detail__page-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .material-detail__button, .material-detail__download-button {
+    padding: 10px 15px;
+    margin: 0 10px;
+    background-color: #c41e3a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .material-detail__button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .material-detail__page-info {
+    font-size: 16px;
+  }
+  
+  .material-detail__page-input {
+    width: 50px;
+    margin: 0 5px;
+    text-align: center;
+  }
+  
+  /* react-pdf 관련 스타일 */
+  .react-pdf__Document {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .react-pdf__Page {
+    max-width: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .material-detail__content {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+  }
+  
+  .material-detail__content h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .material-detail__upload-date {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: right;
+    color: #666;
+    font-style: italic;
+  }
+
+/* pdf-이상한 부분 없애주는 css  */
+  .react-pdf__Page__textContent.textLayer,
+  .react-pdf__Page__annotations.annotationLayer {
+    display: none;
+  }

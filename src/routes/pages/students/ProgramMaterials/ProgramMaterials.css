@@ -1,0 +1,59 @@
+.ProgramMaterials-container {
+    padding: 20px;
+    width: 100%;
+}
+
+.materials-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.material-item {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.material-item:hover {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #f8f9fa;
+}
+
+.material-header-1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.material-icon {
+    font-size: 20px;
+}
+
+.material-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.material-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.upload-date {
+    color: #666;
+}
+
+.material-item.unread {
+    border:3px solid red;
+    /* background-color: rgb(222, 53, 59); */
+}
+

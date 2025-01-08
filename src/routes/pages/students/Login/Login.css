@@ -1,0 +1,58 @@
+/* Header 고정 */
+.header-container {
+    position: fixed; /* 상단에 고정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* 다른 요소 위에 표시되도록 설정 */
+  }
+  
+  /* 로그인 컨테이너 */
+  .student-login-container {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 수평 중앙 정렬 */
+    justify-content: center; /* 수직 중앙 정렬 */
+    height: calc(100vh - 60px); /* Header 높이를 제외한 화면 높이 */
+    padding-top: 60px; /* Header 아래로 공간 확보 */
+  }
+  
+  /* 제목 스타일 */
+  .student-login-container h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* 입력 필드 스타일 */
+  .student-login-container input[type="text"],
+  .student-login-container input[type="password"] {
+    width: calc(100% - 40px); /* 화면 크기에 따라 너비 조정 */
+    max-width: 300px; /* 최대 너비 제한 */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  /* 버튼 스타일 */
+  .student-login-container button {
+    width: calc(100% - 40px); /* 화면 크기에 따라 너비 조정 */
+    max-width: 300px; /* 최대 너비 제한 */
+    padding: 10px;
+    background-color: #c41e3a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .student-login-container button:hover {
+      background-color: #a11830;
+  }
+  

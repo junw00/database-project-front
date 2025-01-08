@@ -1,0 +1,116 @@
+/* 전체 헤더 컨테이너 */
+.header-container {
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+/* 상단 헤더 */
+.header-wrap {
+    display: flex;
+    justify-content: center; /* 기본적으로 중앙 정렬 */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    position: relative; /* 로고를 중앙에 고정하기 위해 relative 사용 */
+}
+
+.header-logo-wrap {
+    position: absolute; /* 로고를 절대 위치로 설정하여 중앙에 고정 */
+    left: 50%;
+    transform: translateX(-50%); /* 로고를 정확히 중앙으로 이동 */
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-logo span {
+    font-size: 14px;
+    color: red;
+}
+
+.header-right-wrap {
+    margin-left: auto;
+}
+
+.header-right-wrap ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* 로그인 항목 간격 */
+    padding: 0;
+    margin: 0;
+}
+
+.header-right-wrap ul li {
+    position: relative;
+}
+
+.header-right-wrap ul li a {
+    text-decoration: none;
+    color: blue; /* 기본 텍스트 색상 */
+}
+
+/* 각 리스트 항목 뒤에 '|' 기호 추가 */
+.header-right-wrap ul li:not(:last-child)::after {
+    content: "|"; /* 구분 기호 */
+    color: gray; /* 구분 기호 색상 */
+    margin-left: 1rem; /* 구분 기호와 텍스트 사이 간격 */
+    align-items: center;
+}
+
+/* 로그인 항목별 색상 */
+.header-right-wrap ul li:nth-child(1) a {
+    color: blue; /* Student Login - 파란색 */
+}
+
+.header-right-wrap ul li:nth-child(2) a {
+    color: green; /* 교수자로그인 - 초록색 */
+}
+
+.header-right-wrap ul li:nth-child(3) a {
+    color: red; /* 운영자 - 빨간색 */
+}
+
+/* 호버 시 색상 변경 */
+.header-right-wrap ul li a:hover {
+    opacity: 0.8; /* 투명도 조정으로 호버 효과 */
+}
+
+.header-right-wrap button {
+  background-color: #f8f8f8;
+   padding: 0.15rem;
+   color: red;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-weight: bolder;
+}
+
+.nav-menu {
+    background-color: #b71c1c; 
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-menu ul li a span {
+    font-size: 12px;
+}

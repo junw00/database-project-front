@@ -1,0 +1,95 @@
+/* 전체 컨테이너 */
+.message-box-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* 헤더 */
+  .header {
+    background-color: #b80000;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .header-title h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* 메인 컨테이너 */
+  .message-box-main {
+    display: flex;
+    height: calc(100vh - 50px); /* 헤더 제외 */
+  }
+  
+  /* 메시지 목록 */
+  .message-list {
+    width: 30%;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    background-color: #fff;
+  }
+  
+  .message-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  
+  .message-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .message-item.highlight {
+    background-color: #faffd1;
+  }
+  
+  .message-date {
+    font-size: 12px;
+    color: gray;
+    margin: 0;
+  }
+  
+  .message-sender {
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .message-title {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .message-preview {
+    font-size: 12px;
+    color: #555;
+  }
+  
+  /* 메시지 상세 */
+  .message-detail {
+    flex: 1;
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  .message-detail h2 {
+    margin-bottom: 10px;
+  }
+  
+  .message-detail-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .message-content {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  

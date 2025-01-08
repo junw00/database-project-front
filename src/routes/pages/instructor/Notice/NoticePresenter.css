@@ -1,0 +1,76 @@
+.notice-form {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .notice-box {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: all 0.2s ease;
+  }
+  
+  .notice-box:hover {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .notice-title-input {
+    width: 98%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .notice-content-input {
+    width: 98%;
+    height: 300px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: vertical;
+  }
+  
+  .notice-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .deadline-setting {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #666;
+  }
+  
+  .deadline-setting input[type="date"] {
+    padding: 8px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    color: #666;
+  }
+  
+  .notice-header {
+    margin-bottom: 20px;
+  }
+  
+  .notice-header h3 {
+    color: #333;
+    font-size: 18px;
+  }
+  
+  /* 기존 CSS 스타일 유지 */
+  /* .category-tabs,
+  .tab,
+  .tab.active,
+  .book-title,
+  .submit-btn {
+  } */

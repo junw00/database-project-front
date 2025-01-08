@@ -1,0 +1,85 @@
+/* 기본 설정 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* 헤더 */
+.header {
+    background-color: #b80000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-dsu {
+    font-size: 18px;
+}
+
+/* 컨테이너 */
+.unread-container {
+    margin: 20px;
+}
+
+.unread-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #b80000;
+}
+
+/* 테이블 */
+.unread-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.unread-table th,
+.unread-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.unread-table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.unread-table td {
+    background-color: #fff;
+}
+
+/* 독촉 버튼 */
+.follow-up-btn {
+    background-color: #b80000;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.follow-up-btn:hover {
+    background-color: #a00000;
+}
+
+/* 요약 */
+.summary {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: -0.5px; /* 글자 간격 줄이기 */
+}

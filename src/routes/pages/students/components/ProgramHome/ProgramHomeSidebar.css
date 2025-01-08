@@ -1,0 +1,45 @@
+.programHomeSidebar-container {
+    width: 10%;
+    background-color: #f8f9fa;
+    height: 85vh;
+    padding: 20px 0;
+    border-right: 1px solid #dee2e6;
+}
+
+.semester {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+    background-color: #e9ecef;
+    color: #c41e3a;
+}
+
+.menu-item i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.menu-item.active {
+    background-color: #e9ecef;
+    color: #c41e3a;
+}
